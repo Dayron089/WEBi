@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.container {
+  text-align: center;
+}
+
+.counter-display {
+  font-size: 48px;
+  font-weight: bold;
+  color: #0074d9;
+}
+
+.button-container {
+  display: flex;               
+  justify-content: space-between; 
+  width: 350px;                
+  margin-bottom: 30px;          
+  border: 2px solid #0074d9;   
+  border-radius: 15px;          
+  padding: 20px;               
+  box-shadow: 0 10px 20px rgba(0, 116, 217, 0.15); /* Тень */
+  transition: box-shadow 0.3s ease; 
+}
+
+/* Эффект при наведении на контейнер кнопок */
+.button-container:hover {
+  box-shadow: 0 15px 30px rgba(0, 116, 217, 0.25); 
+}
+
+button {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+button#incrementButton {
+  width: 200px; 
+  height: 200px;
+  background-color: #0074d9;
+}
+
+button#incrementButton:hover {
+  background-color: #005bb5;
+}
+
+button#incrementButton:active {
+  transform: scale(0.9);
+}
+
+
+button#resetButton {
+  width: 60px; 
+  height: 60px;
+  background-color: #e74c3c;
+}
+
+button#resetButton:hover {
+  background-color: #c0392b;
+}
+
+button#resetButton:active {
+  transform: scale(0.9);
+}
+
+
+button#undoButton {
+  width: 60px; 
+  height: 60px;
+  background-color: #2ecc71; 
+}
+
+button#undoButton:hover {
+  background-color: #27ae60; 
+}
+
+button#undoButton:active {
+  transform: scale(0.9);
+}
+
+
+
+
